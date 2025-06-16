@@ -1,6 +1,5 @@
-import telebot
-import pandas as pd
-from telebot import types
+from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
+from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 
 # === 1. Загрузка Excel файла ===
 excel = pd.ExcelFile("Мебель (1).xlsx")
